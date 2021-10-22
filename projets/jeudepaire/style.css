@@ -1,0 +1,197 @@
+
+	body {
+		margin:0;
+		padding:0;
+		background: url(./img/images.jpg) no-repeat center center fixed; 
+		background-size: cover; 
+	}
+* {
+	margin: 0;
+	padding: 0;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+html {
+	box-sizing: border-box;
+}
+.container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	
+}
+ul > li {
+	list-style: none;
+}
+
+.card,
+.reset-btn {
+	cursor: pointer;
+}
+.btn {	
+	color: rgb(9, 2, 2);
+	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+	
+}
+.reset-btn {
+	background: rgb(255, 254, 254);}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 99;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(46, 61, 73);
+	background-color: rgba(46, 61, 73, 0.6);
+}
+.modal-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+
+	margin: 5% auto;
+	border: 0.8em solid #fc4;
+	padding-right: 2em;
+	width: 80%;
+}
+.close:hover,
+.close:focus {
+	color: rgb(93, 255, 85);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-img {
+	display: inline-block;
+	margin: 1em 0 1em;
+	width: 20em;
+}
+span {
+	color: white;
+}
+strong{
+	color: white;
+}
+p.stats {
+	font-weight: 600;
+}
+
+p.stats:last-child {
+	margin-bottom: 1em;
+}
+
+.play-again-btn {
+	background: #28e;
+	margin-bottom: 1em;
+}
+.deck {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+.card {
+	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+	background: rgb(12, 0, 250);
+	border-radius: 0.5em;
+
+}
+.deck img {
+	visibility: hidden;
+}
+.deck .card.flip {
+	background: #fff;
+	transition: transform 0.3s linear;	
+}
+.flip img {
+	visibility: visible;
+}
+
+/*-elle est responsive ta tablette*/
+@media screen and (min-width: 550px) {
+
+	.deck  {
+		height: 50em;
+		padding: 2em;
+		width: 50em;
+	}
+
+	.card {
+		height: 10em;
+		width: 10em;
+	}
+
+	.deck img {
+		width: 9em;
+	}
+
+	.modal-content h2 {
+		font-size: 4em;
+	}
+
+	.play-again-btn {
+		font-size: 1.8em;
+	}
+}
+
+/*-L'ordinateur 4k a La 480P Ta le droit de jouer T responsives*/
+@media screen and (min-width: 800px) {
+	
+	h1 {
+		font-size: 6em;
+		color:white;
+	}
+	h2, h3{
+		color : #ffffff;
+	}
+	
+
+	p {
+		font-size: 2.3em;
+	}
+
+	.deck  {
+		height: 70em;
+		width: 70em;
+	}
+
+	.card {
+		height: 15em;
+		width: 15em;
+	}
+
+	.deck img {
+		width: 13em;
+	}
+
+	.reset-btn {
+		font-size: 0.8em;
+	}
+
+	.footer {
+		font-size: 1.2em;
+	}
+	
+	.modal-content h2 {
+		font-size: 5em;
+	}
+
+	/* Modal Image*/
+	.modal-img {
+		width: 30em;
+	}
+
+	.play-again-btn {
+		font-size: 2em;
+	}
+}

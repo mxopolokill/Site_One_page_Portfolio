@@ -1,0 +1,103 @@
+
+
+:root {
+  --primary-color: rgb(143, 143, 143);
+  --primary-color-darker: rgb(46, 255, 4);
+  --secondary-color: rgb(199, 0, 0);
+  --secondary-color-darker: rgb(24, 4, 4);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1{
+  text-align: center;
+  margin: 1em 0;
+}
+
+form{
+  display: flex;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+  flex: 5;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+button{
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+}
+
+form button {
+  background: var(--primary-color);
+  margin-left: 30px;
+  flex: 1;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+ul{
+  list-style-type: none;
+  display:flex;
+  padding:0;
+  flex-direction: column;
+}
+
+ul li{
+  margin: 10px auto;
+  background: #fff;
+  padding: 15px 20px;
+  outline: 1px solid var(--primary-color);
+  border-radius: 10px;
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li button{
+  background: var(--secondary-color);
+  padding: 0 26px;
+}
+
+ul li button:hover{
+  background: var(--secondary-color-darker);
+}

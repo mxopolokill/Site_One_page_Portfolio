@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Le jeu de voiture.</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+</head>
+
+<body style="background-color:rgb(255, 255, 255);">
+    <div class="container mb-4 mt-4">
+        <center>
+            <!-- Titre -->
+            <h1 style="font-size: 3.5rem;">
+               <font  class="tsext-primary">La Voiture</font> 
+            </h1>
+              </center>
+        <div class="card shadow-sm mx-auto mb-3">
+            <div class="card-body row pb-1 pt-1">
+                <div class="col-md-4 text-center">
+                    <h3 id="score_ID" class="text-primary mb-0">0</h3>
+                    <h3>Score</h3>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3 id="maxScore_ID" class="text-primary mb-0">0</h3>
+                    <h3>meilleure Score</h3>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3 id="speed_ID" class="text-primary mb-0">0 m/s</h3>
+                    <h3>vitesse</h3>
+                </div>
+            </div>
+        </div>
+        <center>
+            <h4 class="text-muted">Appuyer sur fleche du haut pour commencer, déplacement avec Fleche Haut Accelerrer, Fleche droite et Gauche pour les directions et FLeche du bas pour Ralentir</h4>
+            <!-- Image carte -->
+            <canvas class="shadow mt-3 mb-0" height="700" width="900" id="myCanvas"
+                style="background: url('assets/images/back.png');"></canvas>
+        </center>
+        <div class="mt-2 card shadow-sm">
+            <div class="card-body">
+               
+            </div>
+        </div>
+    </div>
+    <!-- importation du doc JS -->
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+</body>
+
+</html>

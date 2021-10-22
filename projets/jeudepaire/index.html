@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	
+<div class="container">
+	<header class="header">
+		<h2>Jeu des paire sur le théme de CSGO </h2>
+		<h2>CSGO Edition</h2>
+	</header>
+
+	<section class="score-panel">
+		<h3>paneau scoring</h3>
+		<ul id="star-rating" class="star-rating">
+			<li class="star"><i class="fa fa-star"></i></li>
+			<li class="star"><i class="fa fa-star"></i></li>
+			<li class="star"><i class="fa fa-star"></i></li>
+		</ul>
+		<span class="moves-counter">0</span> <span> déplacement </span> 
+		<div class="timer-container">
+			<span class="timer"><i class="fa fa-hourglass-start"></i> Temps: 00:00</span>
+		</div>
+		<div class="reset">
+			<button class="btn reset-btn">Reset <i class="fa fa-repeat"></i></button>
+		</div>
+	</section>
+
+	
+	<section class="win-game-modal">
+		<div id="modal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2>bien joué </h2>
+				<p>Vous avez gagner la partie  et trouvé les 8 paires de cartes.</p>
+				<img class="modal-img" src="./img/Wiki-background.jpg" alt="#">
+				<button class="btn play-again-btn">rejouer?</button>
+			</div> 
+		</div>
+	</section>
+
+	<ul class="deck"></ul>
+</div>
+
+		<audio controls loop id="soundMain" src="sfx/starting-round-csgo-music-sound-effect.mp3" style="display: none" autoplay="on" autorepeat></audio>
+
+<footer class="footer">
+	<h3>Note de licences</h3>
+	<p><strong>Toutes les images utilisées viennent d'ici  <a href="https://csgo-wikia.fandom.com/fr/wiki/Image">csgo wiki page </a> for the CS Games.</strong></p>
+</footer>
+
+
+
+  <script src="./script.js"></script>
+  </body>
+</html>
